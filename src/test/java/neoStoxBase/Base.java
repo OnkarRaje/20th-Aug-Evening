@@ -17,10 +17,12 @@ public class Base
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\20 August Selenium\\chromedriver.exe");
 		//Created object of chrome driver
+		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		//Launch URL
 		//driver.get("https://neostox.com/");
+		
 		driver.get(Utility.readDataFromPropertyFile("urlQA"));
 		Utility.implicitWait(1000, driver);
 		Reporter.log("launching browser", true);
