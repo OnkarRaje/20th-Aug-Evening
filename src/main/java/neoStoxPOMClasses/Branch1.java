@@ -24,4 +24,12 @@ public class Branch1
 		{
 			PageFactory.initElements(driver, this);
 		}
+		
+		public void Branch1update(int a, int b)
+		{
+			a=10;
+			b=20;
+			int c=a+b;
+			System.out.println(c);
+		}
 }
